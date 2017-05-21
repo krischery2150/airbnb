@@ -14,7 +14,9 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require jquery_ujs
+//= require toastr
 //= require turbolinks
 //= require_tree .
 
 // This set up makes sure that javascript for bootstrap still works
+// toastr rails to handle notifications on the website
