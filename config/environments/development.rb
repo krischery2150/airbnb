@@ -8,6 +8,17 @@ Rails.application.configure do
 
   # For Devise
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  # Setting up mandrill
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      address: 'smtp.sendgrid.net',
+      port: 587,
+      enable_starttls_auto: true,
+      user_name: 'apikey',
+      password: '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',
+      authentication: 'plain'
+  }
+
 
   # Do not eager load code on boot.
   config.eager_load = false
@@ -30,7 +41,7 @@ Rails.application.configure do
   end
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.perform_caching = false
 
