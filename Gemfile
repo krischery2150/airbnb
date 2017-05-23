@@ -27,6 +27,8 @@ gem 'toastr-rails'
 
 gem 'sendgrid-rails'
 
+gem "paperclip"
+
 # For Facebook authentication
 gem 'omniauth'
 gem 'omniauth-facebook'
