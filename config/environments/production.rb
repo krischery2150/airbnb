@@ -80,6 +80,19 @@ Rails.application.configure do
   # require 'syslog/logger'
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
+  # For Devise
+  config.action_mailer.default_url_options = { host: 'https://secret-earth-72381.herokuapp.com' }
+  # Setting up mandrill
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      address: 'smtp.sendgrid.net',
+      port: 587,
+      enable_starttls_auto: true,
+      user_name: 'apikey',
+      password: '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',
+      authentication: 'plain'
+  }
+
   if ENV["RAILS_LOG_TO_STDOUT"].present?
     logger           = ActiveSupport::Logger.new(STDOUT)
     logger.formatter = config.log_formatter

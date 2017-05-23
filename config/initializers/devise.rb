@@ -276,5 +276,6 @@ Devise.setup do |config|
   # so you need to do it manually. For the users scope, it would be:
   # config.omniauth_path_prefix = '/my_engine/users/auth'
   config.omniauth :facebook, '186599205197231', 'bb4310a9e1457b494231d162ef9b8ecc', scope: 'email', info_fields: 'email,name'
+  config.omniauth :google_oauth2, '5544126044-5ocqqfoa5gftc2pd7cf6ek6h5vl75b6s.apps.googleusercontent.com', 'ixYRzc9FdA6WI_nAty2CYMwh'
 
 end
