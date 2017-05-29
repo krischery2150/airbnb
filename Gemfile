@@ -29,6 +29,8 @@ gem 'sendgrid-rails'
 
 gem "paperclip"
 
+gem "geocoder"
+
 # For Facebook authentication
 gem 'omniauth'
 gem 'omniauth-facebook'
