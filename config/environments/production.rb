@@ -81,7 +81,7 @@ Rails.application.configure do
   # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
 
   # For Devise
-  config.action_mailer.default_url_options = { host: 'https://secret-earth-72381.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'https://calm-hollows-88169.herokuapp.com' }
   # Setting up mandrill
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
