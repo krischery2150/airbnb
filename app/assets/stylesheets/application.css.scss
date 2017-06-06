@@ -1,3 +1,7 @@
+/*
+ *= require jquery-ui
+ */
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "toastr";
@@ -219,4 +223,10 @@ input[type="checkbox"]:checked:before {
 
 .text-line-through{
   text-decoration: line-through;
+}
+
+.reservation-table td{
+  width: 100%;
+  border: solid 1px #dce0e0;
+  padding: 10px;
 }

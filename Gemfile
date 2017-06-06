@@ -31,6 +31,7 @@ gem "paperclip"
 
 gem "geocoder"
 
+gem 'jquery-ui-rails'
 # For Facebook authentication
 gem 'omniauth'
 gem 'omniauth-facebook'
