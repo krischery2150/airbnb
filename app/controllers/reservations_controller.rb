@@ -25,8 +25,13 @@ class ReservationsController < ApplicationController
     flash[:notice] = "Your Reservation is booked"
   end
 
+  def your_trips
+    @trips = current_user.reservations
+  end
 
-
+  def your_reservations
+    @rooms = current_user.rooms
+  end
   private
 
   def is_conflict(start_date, end_date)
