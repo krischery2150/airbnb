@@ -31,6 +31,8 @@ gem "paperclip"
 
 gem "geocoder"
 
+gem 'aws-sdk', '~> 2'
+
 gem 'jquery-ui-rails'
 # For Facebook authentication
 gem 'omniauth'
